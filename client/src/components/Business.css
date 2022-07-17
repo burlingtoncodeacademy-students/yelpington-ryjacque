@@ -1,0 +1,33 @@
+#page-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90vw;
+  padding: 5vw;
+}
+
+#table-wrapper {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-self: space-around;
+}
+p {
+  text-align: left;
+}
+td {
+  text-align: left;
+  padding: 1vh;
+}
+@media only screen and (max-width: 600px) {
+  #page-content {
+    flex-direction: column;
+  }
+  #table-wrapper {
+    width: 100vw;
+  }
+  #map {
+    width: 100vw;
+    height: 50vh;
+  }
+}
