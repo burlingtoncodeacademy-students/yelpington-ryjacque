@@ -7,10 +7,11 @@ function Business(props) {
   const [coordinates, setCoordinates] = useState([44.48746, -73.20814]);
   const [marker, setMarker] = useState([44.48598, -73.20995]);
   const [address, setAddress] = useState([]);
-
+  //initial values for coordinates to avoid "undefined"
   useEffect(() => {
     async function getData() {
       let res = await fetch("http://localhost:5000/" + props.fetchPath);
+      //fetch path from server
       let data = await res.json();
       setRestaurantData(data);
       setCoordinates(data.coordinates);

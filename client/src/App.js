@@ -5,6 +5,8 @@ import Home from "./components/Home";
 import "./App.css";
 
 function App() {
+  //router and nav bar
+  //renders perfectly in Safari, not in Firefox, so that's cool
   return (
     <Router>
       <div className="wrapper">

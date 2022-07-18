@@ -5,6 +5,7 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "./Home.css";
 
 function Home() {
+  //This is where the map lives
   return (
     <>
       <div id="map" style={{ height: "80%", width: "60VW", margin: "5vh" }}>
@@ -18,6 +19,7 @@ function Home() {
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
+          {/* original plan for getting coordinates from the api didn't work, so they're hard-coded in for the moment... I'll have to return to this */}
           <Marker position={[44.48598, -73.20995]}>
             <Popup>
               <NavLink to="/tacogordo">Taco Gordo</NavLink>
@@ -27,6 +29,7 @@ function Home() {
             <Popup>
               <NavLink to="/poppycafe">Poppy Cafe</NavLink>, <br />
               <NavLink to="/cafemamajuana">Cafe Mamajuana</NavLink>
+              {/* NavLinks in popups */}
             </Popup>
           </Marker>
           <Marker position={[44.48501, -73.21117]}>
