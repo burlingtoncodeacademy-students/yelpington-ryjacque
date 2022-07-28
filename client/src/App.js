@@ -1,10 +1,21 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Business from "./components/Business";
 import Home from "./components/Home";
 import "./App.css";
 
 function App() {
+  const [allData, setAllData] = useState('')
+  useEffect(() => {
+    async function getData() {
+      let res = await fetch("http://localhost:5000/api");
+      //fetch path from server
+      let data = await res.json();
+      setAllData(data);
+    }
+    getData();
+  }, [])
+  console.log(allData)
   //router and nav bar
   //renders perfectly in Safari, not in Firefox, so that's cool
   return (
@@ -12,20 +23,20 @@ function App() {
       <div className="wrapper">
         <h1>Yelpington</h1>
         <nav>
-          <Link className="nav-item" to="/">Home</Link>
-          <Link to="/tacogordo">Taco Gordo</Link>
-          <Link to="/cafemamajuana">Cafe Mamajuana</Link>
-          <Link to="/mauditepoutine">Maudite Poutine</Link>
-          <Link to="/poppycafe">Poppy Cafe</Link>
-          <Link to="/mayday">May Day</Link>
+        <Link className="nav-item" to="/">Home</Link>
+        {allData.map((business)=>{
+          return (
+            <Link className="nav-item" to={business.path}>{business.name}</Link>
+          )
+        })}
         </nav>
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/tacogordo" element={<Business fetchPath="tg" />}/>
-          <Route exact path="/cafemamajuana" element={<Business fetchPath="mj" />}/>
-          <Route exact path="/mauditepoutine" element={<Business fetchPath="mp" />}/>
-          <Route exact path="/poppycafe" element={<Business fetchPath="pc" />}/>
-          <Route exact path="/mayday" element={<Business fetchPath="md" />} />
+          <Route exact path="/" element={<Home allData={allData}/>} />
+          {allData.map((business)=>{
+            return (
+              <Route exact path={business.path} element={<Business fetchPath={business.id} />} />
+            )
+          })}
         </Routes>
       </div>
     </Router>
