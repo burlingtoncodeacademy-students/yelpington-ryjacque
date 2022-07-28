@@ -1,6 +1,7 @@
 [
     {
         "id": "tg",
+        "path" : "/tacogordo",
         "name": "Taco Gordo",
         "cuisine": "west coast style tacos",
         "address": ["208 N Winooski Ave", "Burlington, VT 05401"],
@@ -11,6 +12,7 @@
     },
     {
         "id": "md",
+        "path" : "/mayday",
         "name": "May Day",
         "cuisine": "classic American-style cuisine",
         "address": ["258 North Winooski Ave", "Burlington, VT 05401"],
@@ -21,6 +23,7 @@
     },
     {
         "id": "mp",
+        "path" : "/mauditepoutine",
         "name": "Maudite Poutine",
         "cuisine": "Vermont-style poutinerie",
         "address": ["156 N Winooski Ave", "Burlington, VT 05401"],
@@ -31,6 +34,7 @@
     },
     {
         "id": "mj",
+        "path" : "/mamajuana",
         "name": "Cafe Mamajuana",
         "cuisine": "Dominican Fusion",
         "address": ["88 Oak St", "Burlington, VT 05401"],
@@ -40,14 +44,15 @@
         "about": "Mamajuana opened recently in the old Chubby Muffin building, which they share with Poppy Cafe and All Souls Tortilleria. That food is gooooood."
     },
     {
-        "id": "pc",
-        "name": "Poppy Cafe",
-        "cuisine": "artisanal sandwiches",
-        "address": ["88 Oak St", "Burlington, VT 05401"],
-        "coordinates": [44.489620, -73.210040],
-        "phone": "(802) 393-4711",
-        "hours": "Tuesday - Friday : 8:00am - 2:30pm",
-        "about": "Poppy opened recently in the old Chubby Muffin building, which they share with Cafe Mamajuana and All Souls Tortilleria. Those sandwiches are good for at least two meals."
+        "id": "ny",
+        "path" : "/nunyuns",
+        "name": "Nunyuns Cafe",
+        "cuisine": "Homestyle breakfast, coffee and treats",
+        "address": ["139 N Champlain St", "Burlington, VT 05401"],
+        "coordinates": [44.484470, -73.217960],
+        "phone": "(802) 861-2067",
+        "hours": "Wednesday-Sunday : 8:00am - 2:00pm",
+        "about": "Nunyuns is an ONE staple; they've been serving simple, delicious breakfasts at their cozy location on N Champlain for years."
     }
 
 ]

@@ -63,9 +63,9 @@ function Business(props) {
           </table>
           <p>{restaurantData.about}</p>
         </div>
-        <div id="map" style={{ height: "80%", width: "40VW" }}>
+        <div id="map" style={{ height: '60vh', width: "40VW" }}>
           <MapContainer
-            style={{ height: "100%", width: "100%" }}
+            style={{ height: '100%', width: "100%" }}
             center={coordinates}
             zoom={14}
             scrollWheelZoom={false}

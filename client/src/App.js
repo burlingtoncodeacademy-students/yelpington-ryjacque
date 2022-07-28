@@ -5,7 +5,7 @@ import Home from "./components/Home";
 import "./App.css";
 
 function App() {
-  const [allData, setAllData] = useState('')
+  const [allData, setAllData] = useState([])
   useEffect(() => {
     async function getData() {
       let res = await fetch("http://localhost:5000/api");
