@@ -10,7 +10,7 @@ function Business(props) {
   //initial values for coordinates to avoid "undefined"
   useEffect(() => {
     async function getData() {
-      let res = await fetch("http://localhost:5000/" + props.fetchPath);
+      let res = await fetch("http://localhost:5000" + props.fetchPath);
       //fetch path from server
       let data = await res.json();
       setRestaurantData(data);

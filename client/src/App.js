@@ -21,9 +21,8 @@ function App() {
   return (
     <Router>
       <div className="wrapper">
-        <h1>Yelpington</h1>
+      <Link className="nav-item" to="/"><h1>Yelpington</h1></Link>
         <nav>
-        <Link className="nav-item" to="/">Home</Link>
         {allData.map((business)=>{
           return (
             <Link className="nav-item" to={business.path}>{business.name}</Link>
@@ -34,7 +33,7 @@ function App() {
           <Route exact path="/" element={<Home allData={allData}/>} />
           {allData.map((business)=>{
             return (
-              <Route exact path={business.path} element={<Business fetchPath={business.id} />} />
+              <Route exact path={business.path} element={<Business fetchPath={business.path} />} />
             )
           })}
         </Routes>

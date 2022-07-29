@@ -5,7 +5,7 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "./Home.css";
 
 function Home(props) {
-  const allData=props.allData
+  const allData = props.allData;
   return (
     <>
       <div id="map" style={{ height: "80%", width: "60VW", margin: "5vh" }}>
@@ -17,17 +17,17 @@ function Home(props) {
         >
           <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
-          {allData.map((business)=>{
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
+          {allData.map((business) => {
             return (
               <Marker position={business.coordinates}>
                 <Popup>
                   <NavLink to={business.path}>{business.name}</NavLink>
                 </Popup>
-                </Marker>
-            )
+              </Marker>
+            );
           })}
-         
         </MapContainer>
       </div>
     </>

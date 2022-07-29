@@ -11,7 +11,7 @@ app.get("/api", (req, res) => {
 });
 //loop to send each restaurant's data to the correct path
 for (let i of jsonPath) {
-  app.get(`/${i.id}`, (req, res) => {
+  app.get(i.path, (req, res) => {
     res.send(i);
   });
 }
