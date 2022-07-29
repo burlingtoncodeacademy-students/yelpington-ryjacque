@@ -1,12 +1,13 @@
 .page-wrapper{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   max-height: 100%;
 }
 
 h1{
   text-align: center;
+  margin-top: 3vh;
 }
 nav {
   position: fixed;
@@ -18,6 +19,7 @@ nav {
   width: 15vw;
   height: 100vh;
   text-align: left;
+  border: 1px solid black;
 }
 .nav-item{
 margin-left: 2vw;
