@@ -23,10 +23,10 @@ function Business(props) {
 
   console.log(restaurantData);
   return (
-    <>
-      <div id="page-content">
-        <div id="table-wrapper">
-          <h2>{restaurantData.name}</h2>
+      <div className='business-wrapper'>
+        <h2>{restaurantData.name}</h2>
+        <div className='info-wrapper'>
+        <div className="table-wrapper">
           <table>
             <tr>
               <td>
@@ -63,7 +63,7 @@ function Business(props) {
           </table>
           <p>{restaurantData.about}</p>
         </div>
-        <div id="map" style={{ height: '60vh', width: "40VW" }}>
+        <div id="map" style={{ height: '50vh', width: "30vw" }}>
           <MapContainer
             style={{ height: '100%', width: "100%" }}
             center={coordinates}
@@ -79,8 +79,8 @@ function Business(props) {
             </Marker>
           </MapContainer>
         </div>
+        </div>
       </div>
-    </>
   );
 }
 

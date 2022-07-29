@@ -8,7 +8,7 @@ function Home(props) {
   const allData = props.allData;
   return (
     <>
-      <div id="map" style={{ height: "80%", width: "60VW", margin: "5vh" }}>
+      <div id="map" style={{ height: "60vh", width: "60vw", margin: "5vh" }}>
         <MapContainer
           style={{ height: "100%", width: "100%" }}
           center={[44.48746, -73.20814]}

@@ -20,15 +20,17 @@ function App() {
   //renders perfectly in Safari, not in Firefox, so that's cool
   return (
     <Router>
-      <div className="wrapper">
-      <Link className="nav-item" to="/"><h1>Yelpington</h1></Link>
-        <nav>
+      <Link  to="/"><h1>Yelpington</h1></Link>
+      <div className="page-wrapper">
+      <nav>
         {allData.map((business)=>{
           return (
             <Link className="nav-item" to={business.path}>{business.name}</Link>
           )
         })}
         </nav>
+      
+        
         <Routes>
           <Route exact path="/" element={<Home allData={allData}/>} />
           {allData.map((business)=>{

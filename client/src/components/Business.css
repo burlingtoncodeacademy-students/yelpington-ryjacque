@@ -1,16 +1,23 @@
-#page-content {
+.business-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  padding: 5vw;
+  height: 60vh;
+}
+.info-wrapper{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 90vw;
-  padding: 5vw;
+  width: 80vw;
 }
-
-#table-wrapper {
-  width: 40%;
+.table-wrapper {
   display: flex;
   flex-direction: column;
   justify-self: space-around;
+  width: 30vw;
 }
 p {
   text-align: left;
@@ -19,15 +26,4 @@ td {
   text-align: left;
   padding: 1vh;
 }
-@media only screen and (max-width: 600px) {
-  #page-content {
-    flex-direction: column;
-  }
-  #table-wrapper {
-    width: 100vw;
-  }
-  #map {
-    width: 100vw;
-    height: 50vh;
-  }
-}
+

@@ -1,20 +1,26 @@
-* {
-  text-align: center;
-}
-.wrapper {
+.page-wrapper{
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
+  max-height: 100%;
+}
+
+h1{
   text-align: center;
-  height: 100vh;
-  
 }
 nav {
+  position: fixed;
+  top:0;
+  left:0;
   display: flex;
   justify-content: space-around;
-  align-items: centerk;
-  width: 100%;
+  flex-direction: column;
+  width: 15vw;
+  height: 100vh;
+  text-align: left;
+}
+.nav-item{
+margin-left: 2vw;
 }
 a:link {
   color: black;
