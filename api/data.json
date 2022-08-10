@@ -1,0 +1,98 @@
+[
+    {
+        "path": "/tacogordo",
+        "name": "Taco Gordo",
+        "cuisine": "West coast style tacos",
+        "address": [
+            "208 N Winooski Ave",
+            "Burlington, VT 05401"
+        ],
+        "coordinates": [
+            44.485980,
+            -73.209950
+        ],
+        "phone": "(802) 540-0770",
+        "hours": "Tuseday - Saturday : 5:00 - 10:00pm",
+        "about": "Taco Gordo a hoppin' neighborhood spot in the old ONE Beverage Redemption Center"
+    },
+    {
+        "path": "/mayday",
+        "name": "May Day",
+        "cuisine": "Classic American-style",
+        "address": [
+            "258 North Winooski Ave",
+            "Burlington, VT 05401"
+        ],
+        "coordinates": [
+            44.486880,
+            -73.208310
+        ],
+        "phone": "(802) 540-9240",
+        "hours": "Friday - Monday : 5:00 - 10:00pm",
+        "about": "May Day just opened up in the old Butch & Babes building. They will let you taste wine before you buy a bottle, but only if you ask."
+    },
+    {
+        "path": "/mauditepoutine",
+        "name": "Maudite Poutine",
+        "cuisine": "Vermont-style poutinerie",
+        "address": [
+            "156 N Winooski Ave",
+            "Burlington, VT 05401"
+        ],
+        "coordinates": [
+            44.485010,
+            -73.211170
+        ],
+        "phone": "(802) 540-9133",
+        "hours": "Thursday - Saturday : 11:00am - 8:00pm",
+        "about": "Maudite Poutine just opened up where Drifters used to be. They have late-night hot dogs and milk shakes."
+    },
+    {
+        "path": "/mamajuana",
+        "name": "Cafe Mamajuana",
+        "cuisine": "Dominican Fusion",
+        "address": [
+            "88 Oak St",
+            "Burlington, VT 05401"
+        ],
+        "coordinates": [
+            44.489620,
+            -73.210040
+        ],
+        "phone": "(802) 316-8128",
+        "hours": "Wednesday - Friday : 4:00 - 9:00pm Saturday : 10:30am - 2:00pm",
+        "about": "Mamajuana opened recently in the old Chubby Muffin building, which they share with Poppy Cafe and All Souls Tortilleria. That food is gooooood."
+    },
+    {
+        "path": "/shinjukustation",
+        "name": "Shinjuku Station",
+        "cuisine": "Traditional Japanese",
+        "address": [
+            "260 North St",
+            "Burlington, VT 05401"
+        ],
+        "coordinates": [
+            44.484910,
+            -73.211790
+        ],
+        "phone": "(802) 540-8198",
+        "hours": "Tuesday - Saturday : 2:00 - 8:00pm ",
+        "about": "Shinjuku Station is the ONE's only Japanese restaurant, and the ramen is bangin'."
+    },
+    {
+        "path": "/nunyuns",
+        "name": "Nunyuns Cafe",
+        "cuisine": "Homestyle breakfast, coffee and treats",
+        "address": [
+            "139 N Champlain St",
+            "Burlington, VT 05401"
+        ],
+        "coordinates": [
+            44.484470,
+            -73.217960
+        ],
+        "phone": "(802) 861-2067",
+        "hours": "Wednesday-Sunday : 8:00am - 2:00pm",
+        "about": "Nunyuns is an ONE staple; they've been serving simple, delicious breakfasts at their cozy location on N Champlain for years."
+    }
+]

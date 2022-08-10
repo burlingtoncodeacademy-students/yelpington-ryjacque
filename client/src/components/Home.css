@@ -1,0 +1,14 @@
+.map-wrapper {
+  height: 60vh;
+  width: 60vw;
+}
+.home-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+  height: 80vh;
+  width: 80vw;
+  margin-left: 15vw;
+}
